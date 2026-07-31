@@ -127,11 +127,44 @@
         }
       }
     </style>
-    <script type="module" crossorigin src="/kangaroo-erp-v65-test1-live/assets/index-BqVR4pVR.js"></script>
-    <link rel="modulepreload" crossorigin href="/kangaroo-erp-v65-test1-live/assets/interactionGuard-BvHEISwp.js">
-    <link rel="modulepreload" crossorigin href="/kangaroo-erp-v65-test1-live/assets/runtimeBus-2EJwbL_u.js">
-    <link rel="stylesheet" crossorigin href="/kangaroo-erp-v65-test1-live/assets/index-evcTIavd.css">
-  </head>
+    <!-- BEGIN KANGAROO_AUTO_LAYOUT_BOOTSTRAP_V1 -->
+  <script>
+    (() => {
+      const breakpoint = 820;
+      const viewportMobile =
+        window.innerWidth <= breakpoint;
+      const screenWidth =
+        Number(window.screen?.width) || Infinity;
+      const screenHeight =
+        Number(window.screen?.height) || Infinity;
+      const compactScreen =
+        Math.min(
+          screenWidth,
+          screenHeight,
+        ) <= breakpoint;
+      const coarseTouch =
+        window.matchMedia?.(
+          '(hover: none) and (pointer: coarse)',
+        ).matches === true;
+
+      document.documentElement.dataset.layout =
+        (
+          viewportMobile ||
+          (
+            coarseTouch &&
+            compactScreen
+          )
+        )
+          ? 'mobile'
+          : 'desktop';
+    })();
+  </script>
+  <!-- END KANGAROO_AUTO_LAYOUT_BOOTSTRAP_V1 -->
+  <script type="module" crossorigin src="/kangaroo-erp-v65-test1-live/assets/index-BkVEXvj7.js"></script>
+  <link rel="modulepreload" crossorigin href="/kangaroo-erp-v65-test1-live/assets/interactionGuard-BvHEISwp.js">
+  <link rel="modulepreload" crossorigin href="/kangaroo-erp-v65-test1-live/assets/runtimeBus-2EJwbL_u.js">
+  <link rel="stylesheet" crossorigin href="/kangaroo-erp-v65-test1-live/assets/index-EAJa9ti_.css">
+</head>
   <body>
     <div id="app">
       <main
