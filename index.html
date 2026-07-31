@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10a957" />
+    <title>Kangaroo ERP V6.5</title>
+    <style>
+      html,
+      body {
+        min-height: 100%;
+        margin: 0;
+      }
+
+      body {
+        background: #dfe7ef;
+        font-family:
+          Inter,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+      }
+
+      .app-boot-shell {
+        box-sizing: border-box;
+        display: grid;
+        min-height: 100dvh;
+        place-items: center;
+        padding: 20px;
+      }
+
+      .app-boot-device {
+        box-sizing: border-box;
+        width: min(440px, calc(100vw - 24px));
+        height: min(956px, calc(100dvh - 24px));
+        overflow: hidden;
+        border: 6px solid #172033;
+        border-radius: 42px;
+        background: #f4f8f6;
+        box-shadow: 0 18px 46px rgb(15 23 42 / 18%);
+      }
+
+      .app-boot-header {
+        box-sizing: border-box;
+        height: 76px;
+        padding: 18px 16px;
+        background: #10a957;
+      }
+
+      .app-boot-line,
+      .app-boot-card {
+        position: relative;
+        overflow: hidden;
+        background: #e4ebe8;
+      }
+
+      .app-boot-line::after,
+      .app-boot-card::after {
+        position: absolute;
+        inset: 0;
+        content: "";
+        background:
+          linear-gradient(
+            100deg,
+            transparent 20%,
+            rgb(255 255 255 / 55%) 48%,
+            transparent 76%
+          );
+        transform: translateX(-100%);
+        animation: app-boot-shimmer 1.25s infinite;
+      }
+
+      .app-boot-line {
+        width: 128px;
+        height: 14px;
+        border-radius: 999px;
+        background: rgb(255 255 255 / 72%);
+      }
+
+      .app-boot-line.is-small {
+        width: 84px;
+        height: 9px;
+        margin-top: 9px;
+        opacity: 0.72;
+      }
+
+      .app-boot-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 14px;
+      }
+
+      .app-boot-card {
+        min-height: 116px;
+        border: 1px solid #d8e2de;
+        border-radius: 12px;
+        background: #ffffff;
+      }
+
+      @keyframes app-boot-shimmer {
+        to {
+          transform: translateX(100%);
+        }
+      }
+
+      @media (max-width: 700px) {
+        .app-boot-shell {
+          padding: 0;
+        }
+
+        .app-boot-device {
+          width: 100%;
+          height: 100dvh;
+          border: 0;
+          border-radius: 0;
+          box-shadow: none;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .app-boot-line::after,
+        .app-boot-card::after {
+          animation: none;
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/kangaroo-erp-v65-test1-live/assets/index-BqVR4pVR.js"></script>
+    <link rel="modulepreload" crossorigin href="/kangaroo-erp-v65-test1-live/assets/interactionGuard-BvHEISwp.js">
+    <link rel="modulepreload" crossorigin href="/kangaroo-erp-v65-test1-live/assets/runtimeBus-2EJwbL_u.js">
+    <link rel="stylesheet" crossorigin href="/kangaroo-erp-v65-test1-live/assets/index-evcTIavd.css">
+  </head>
+  <body>
+    <div id="app">
+      <main
+        class="app-boot-shell"
+        data-app-boot-shell
+        aria-label="Đang mở Kangaroo ERP"
+        aria-busy="true"
+      >
+        <section class="app-boot-device">
+          <header class="app-boot-header">
+            <div class="app-boot-line"></div>
+            <div class="app-boot-line is-small"></div>
+          </header>
+
+          <div class="app-boot-grid" aria-hidden="true">
+            <div class="app-boot-card"></div>
+            <div class="app-boot-card"></div>
+            <div class="app-boot-card"></div>
+            <div class="app-boot-card"></div>
+            <div class="app-boot-card"></div>
+            <div class="app-boot-card"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

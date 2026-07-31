@@ -1,0 +1,1 @@
+var e=`kangaroo:`;function t(t,n={}){let r=t.startsWith(e)?t:`${e}${t}`;window.dispatchEvent(new CustomEvent(r,{detail:{...n,emittedAt:new Date().toISOString()}}))}function n(t,n){let r=t.startsWith(e)?t:`${e}${t}`;return window.addEventListener(r,n),()=>window.removeEventListener(r,n)}export{n,t};

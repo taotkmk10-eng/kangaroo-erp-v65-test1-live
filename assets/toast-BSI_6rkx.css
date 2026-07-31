@@ -1,0 +1,1 @@
+.app-toast{z-index:10000;color:#fff;text-align:center;opacity:0;pointer-events:none;background:#19221df0;border-radius:9px;max-width:calc(100vw - 32px);padding:9px 14px;font-size:14px;font-weight:500;transition:opacity .14s,transform .14s;position:fixed;bottom:76px;left:50%;transform:translate(-50%,8px)}.app-toast.is-visible{opacity:1;transform:translate(-50%)}
