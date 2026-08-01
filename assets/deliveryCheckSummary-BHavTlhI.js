@@ -1,4 +1,4 @@
-import{n as e}from"./interactionGuard-BvHEISwp.js";import{a as t,i as n,o as r}from"./searchRuntime-CHhHjD_4.js";import{n as i}from"./actionLock-BTZKYVnA.js";function a(e){let t=String(e??``).trim();if(!t)throw TypeError(`Thiếu ID đơn hàng để tải lịch sử.`);return r(`rpc_get_don_hang_history`,{p_id_don_hang:t},`Không tải được lịch sử đơn hàng`)}var o=Object.freeze({order:`
+import{a as e}from"./realtimeImpactRegistry-BgzWm3W7.js";import{a as t,i as n,o as r}from"./searchRuntime-C7VufGsy.js";import{n as i}from"./actionLock-BTZKYVnA.js";function a(e){let t=String(e??``).trim();if(!t)throw TypeError(`Thiếu ID đơn hàng để tải lịch sử.`);return r(`rpc_get_don_hang_history`,{p_id_don_hang:t},`Không tải được lịch sử đơn hàng`)}var o=Object.freeze({order:`
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <rect x="5" y="4" width="14" height="16" rx="2"></rect>
       <path d="M8 8h8"></path>
