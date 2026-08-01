@@ -1,4 +1,4 @@
-import{i as e}from"./realtimeImpactRegistry-BgzWm3W7.js";var t=null;function n(){let e=document.querySelector(`#shared-confirm-dialog`);return e||(e=document.createElement(`dialog`),e.id=`shared-confirm-dialog`,e.className=`shared-confirm-dialog`,e.innerHTML=`
+import{i as e}from"./realtimeImpactRegistry-CDq8rbak.js";var t=null;function n(){let e=document.querySelector(`#shared-confirm-dialog`);return e||(e=document.createElement(`dialog`),e.id=`shared-confirm-dialog`,e.className=`shared-confirm-dialog`,e.innerHTML=`
     <form
       method="dialog"
       class="shared-confirm-dialog__panel"
